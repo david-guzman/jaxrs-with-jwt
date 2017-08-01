@@ -12,11 +12,20 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <spec_impl_version>1.0-b11-SNAPSHOT</spec_impl_version>
+
+        <api_dependency_version>1.0-b10-SNAPSHOT</api_dependency_version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <dependencies>
-     
 
+    <dependencies>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
@@ -24,11 +33,19 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            
-            
             <groupId>org.bitbucket.b_c</groupId>
             <artifactId>jose4j</artifactId>
             <version>0.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.soteria</groupId>
+            <artifactId>javax.security.enterprise</artifactId>
+            <version>${spec_impl_version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.security.enterprise</groupId>
+            <artifactId>javax.security.enterprise-api</artifactId>
+            <version>${api_dependency_version}</version>
         </dependency>
     </dependencies>
 
